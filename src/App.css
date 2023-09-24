@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%)); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+.form {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.clock-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    margin: 24px 0;
+}
+
+.card {
+    width: 280px;
+}
+
+.card header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
